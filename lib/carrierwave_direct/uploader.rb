@@ -44,7 +44,7 @@ module CarrierWaveDirect
       if url.present?
         self.key = URI.parse(URI.encode(url)).path[1 .. -1] # explicitly set key
       else
-        @key = "#{store_dir}/#{guid}/#{FILENAME_WILDCARD}"
+        @key = "#{store_dir}/#{FILENAME_WILDCARD}"
       end
       @key
     end
